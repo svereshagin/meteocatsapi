@@ -1,0 +1,18 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: meteoapi
+    restart: always
+    env_file: .env
+    ports:
+      - "${METEOCATSAPI_PORT}:${METEOCATSAPI_PORT}"
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfilevue
+    container_name: catsapi
+    restart: always
+    ports:
+      - "5173:5173"
