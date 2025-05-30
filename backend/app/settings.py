@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings as PydanticBaseSettings
 
 PREFIX = "METEOCATSAPI_"
 
-DOTENV = pathlib.Path(__file__).parent.parent / ".env"
+DOTENV = pathlib.Path(__file__).parent.parent.parent / ".env"
 
 
 class BaseSettings(PydanticBaseSettings):

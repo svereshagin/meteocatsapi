@@ -42,7 +42,7 @@ export default {
       if (!this.city) return;
 
       try {
-        const response = await axios.get(`http://localhost:8123/weather/${this.city}`);
+        const response = await axios.get(`/localhost/weather/${this.city}`);
         console.log('Данные погоды:', response.data);
 
         // Преобразуем данные в нужный формат

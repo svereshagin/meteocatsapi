@@ -6,3 +6,9 @@ services:
     ports:
       - "5143:5143"
     container_name: vue_frontend
+    networks:
+      - my_shared_network
+
+networks:
+  my_shared_network:
+    external: true
