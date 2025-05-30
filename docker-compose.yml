@@ -19,7 +19,7 @@ services:
 
   frontend:
     build:
-      context: .
+      context: ./frontend/forecastapi
       dockerfile: Dockerfilevue
     container_name: vue_frontend
     restart: unless-stopped
@@ -27,7 +27,6 @@ services:
       - "5173:5173"
     volumes:
       - ./frontend/forecastapi:/app
-      - /app/node_modules
 #    depends_on:
 #      - backend
 #    networks:
