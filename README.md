@@ -1,10 +1,19 @@
-# eteocatsapi
+# Meteocatsapi
 
+Meteocatsapi — это простой веб-сервис на FastAPI и Vue.js, предназначенный для получения прогноза погоды по названию города.
 Небольшой веб сервис для получения погоды через API
-Использует api сайтов:
 
-- 2GIS: https://dev.2gis.ru/api
-- open-meteo.com: https://open-meteo.com/
+## Используемые API
+2GIS API — предоставляет координаты (широту и долготу) по названию населённого пункта и поддерживает автодополнение.
+https://dev.2gis.ru/api
+open-meteo.com — возвращает прогноз погоды по координатам.
+https://open-meteo.com/
+
+## Особенности
+Backend реализован с использованием FastAPI.
+Простая интеграция с frontend, написанным на Vue.js.
+Предустановленный тестовый ключ для 2GIS находится в .env.example.
+FastAPI работает на порту 8123, который используется во frontend. Изменение порта не рекомендуется.
 
 2GIS предоставляет получение latitude и longitude, что важно для дальнейшей работы
 с сайтом open-meteo.com, который ожидает получения этих данных. Также 2GIS предоставляет API для автодополнения при
@@ -13,16 +22,15 @@
 В файле .env.example находится уже готовый тестовый ключ для взаимодействия с API.
 
 Помимо работы над получением данных и обработки в FastAPI у сервиса также есть простая связка с frontend написанным на Vue.js.
-Для корректной работы не рекомендуется менять стандартный порт FastAPI(8123) поскольку Vue стучит на этот порт по адресу
+Для корректной работы не рекомендуется менять стандартный порт FastAPI(8123) поскольку Vue стучит на этот порт по адресу.
 http://localhost:8123/weather/{city}
 
-FastAPI:
-http://localhost:8123/weather/{city}
+## Структура URL
+Backend API: http://localhost:8123/weather/{city}
 
-Vue.js
-http://localhost:5174/
+Frontend (Vue.js): http://localhost:5174/
 
-# запуск локально
+## Локальный запуск
 1. создать файл .env
 ```bash
 touch .env
@@ -33,7 +41,7 @@ touch .env
 cp .env.example .env
 ```
 
-3. перейти в backend через cd и запустить pip install -r requirements.txt
+3. Перейдите в директорию backend и установите зависимости:
 
 ```bash
 cd backend
@@ -44,29 +52,45 @@ pip install -r requirements.txt
 5. Находясь в директории запустить python3 -m app (если мак) или python -m app(на других устройствах)
 
 ```bash
-python3 -m app
+python3 -m app   # для macOS / Unix
+python -m app    # для Windows
 ```
-FrontEnd локально
+## FrontEnd локально
 1. Для запуска фронтенда перейдите по пути /frontend/forecastapi
 запустите:
 
-1. npm run install
-1. npm run build
-2. npm run dev
+```bash
+npm install
+npm run build
+npm run dev
+```
 
 
-[![asciicast](https://asciinema.org/a/bIptFyga6eHvSzQ5weKqunULX.svg)](https://asciinema.org/a/bIptFyga6eHvSzQ5weKqunULX)
 
-
-Для запуска приложения из докера
+## Для запуска приложения из докера
 
 1. создайте и заполните .env файл по той же инструкции, что и для локального сервера
+```bash
+touch .env
+ ```
+
 2. запустите docker-compose build из root директории 
+```bash
+docker-compose build
+```
 3. Дождавшись загрузки образа напишите docker-compose up
-4. после поднятия сервера перейдите на соответсвующий адрес, если вы не меняли порт, то стандартным будет адрес
-   
-1. http://0.0.0.0:8123/        - backend сервис.
-2. http://0.0.0.0:8123/docs    - backend документация.
-3. http://0.0.0.0:8123/weather/{city}  - адрес сервиса погоды.
-Для тестирования советую использовать /docs вкладку fastapi и протестировать данные через openapi
-# запуск Docker
+
+```bash
+docker-compose up
+```
+
+4. после поднятия сервера перейдите на соответсвующий адрес
+
+## После запуска:
+Backend: http://0.0.0.0:8123/
+Документация FastAPI: http://0.0.0.0:8123/docs
+Прогноз погоды: http://0.0.0.0:8123/weather/{city}
+
+## Тестирование
+Рекомендую протестировать API через встроенную документацию OpenAPI по адресу:
+http://0.0.0.0:8123/docs
