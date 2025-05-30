@@ -1,18 +1,38 @@
 services:
-  api:
+  backend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: backend/Dockerfile
     container_name: meteoapi
-    restart: always
-    env_file: .env
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./backend:/app
     ports:
       - "${METEOCATSAPI_PORT}:${METEOCATSAPI_PORT}"
-#  frontend:
-#    build:
-#      context: .
-#      dockerfile: Dockerfilevue
-#    container_name: catsapi
-#    restart: always
-#    ports:
-#      - "5173:5173"
+    command: bash -c "python -m backend.app"
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: vue_frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/forecastapi:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

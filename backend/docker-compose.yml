@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    container_name: meteoapi
+    restart: always
+    env_file: ../.env
+    environment:
+      - PYTHONPATH=/app
+    ports:
+      - "${METEOCATSAPI_PORT}:${METEOCATSAPI_PORT}"
+    command: bash -c "python -m backend.app"
