@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.models.weather_models import WeatherInput, WeatherOutput
+from app.models.weather_models import WeatherOutput
 from app.utils.weather_utils import get_coords, get_weather_by_city
 
 router = APIRouter(prefix="/weather")
@@ -13,4 +13,3 @@ async def get_weather(city: str):
     return weather
 
 
-# response_model=WeatherOutput
