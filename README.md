@@ -1,11 +1,14 @@
 # Meteocatsapi
 
+Сделаны все тестовые задания.
+
 Meteocatsapi — это простой веб-сервис на FastAPI и Vue.js, предназначенный для получения прогноза погоды по названию города.
 Небольшой веб сервис для получения погоды через API
 
 ## Используемые API
 2GIS API — предоставляет координаты (широту и долготу) по названию населённого пункта и поддерживает автодополнение.
 https://dev.2gis.ru/api
+https://platform.2gis.ru/ru?utm_source=dev_2gis&utm_medium=button_main&utm_campaign=API_NAVI - сайт для получения ключа
 open-meteo.com — возвращает прогноз погоды по координатам.
 https://open-meteo.com/
 

@@ -12,9 +12,16 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      'lodash-es': 'lodash-es',
+      'lodash': 'lodash-es'
     },
   },
+  build: {
+    rollupOptions: {
+      external: ['lodash-es']
+    }},
+
   server: {
     host: '0.0.0.0',
     port: 5174,

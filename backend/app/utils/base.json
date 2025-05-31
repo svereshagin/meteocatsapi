@@ -1,0 +1,119 @@
+{
+    "meta": {
+        "api_version": "3.0.18846",
+        "code": 200,
+        "issue_date": "20250531"
+    },
+    "result": {
+        "items": [
+            {
+                "color": "#78C800",
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u041b\u0438\u0430\u043d\u043e\u0437\u043e\u0432\u043e",
+                "id": "70030076661222296",
+                "name": "\u041b\u0438\u0430\u043d\u043e\u0437\u043e\u0432\u043e",
+                "route_type": "metro",
+                "search_attributes": {
+                    "handling_type": 0
+                },
+                "subtype": "metro",
+                "type": "station"
+            },
+            {
+                "color": "#E90101",
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u041b\u0438\u0445\u043e\u0431\u043e\u0440\u044b",
+                "id": "4504385655418042",
+                "name": "\u041b\u0438\u0445\u043e\u0431\u043e\u0440\u044b",
+                "route_type": "mcc",
+                "search_attributes": {
+                    "handling_type": 0
+                },
+                "subtype": "railway",
+                "type": "station"
+            },
+            {
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u041b\u0438\u0442\u043e\u0432\u0441\u043a\u0438\u0439 \u0431\u0443\u043b\u044c\u0432\u0430\u0440",
+                "id": "4504338361745951",
+                "name": "\u041b\u0438\u0442\u043e\u0432\u0441\u043a\u0438\u0439 \u0431\u0443\u043b\u044c\u0432\u0430\u0440",
+                "search_attributes": {
+                    "handling_type": 3
+                },
+                "type": "street"
+            },
+            {
+                "color": "#ED9F2E",
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u041b\u0438\u0430\u043d\u043e\u0437\u043e\u0432\u043e",
+                "id": "70030076195132698",
+                "name": "\u041b\u0438\u0430\u043d\u043e\u0437\u043e\u0432\u043e",
+                "route_type": "mcd",
+                "search_attributes": {
+                    "handling_type": 0
+                },
+                "subtype": "railway",
+                "type": "station"
+            },
+            {
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u041b\u0438\u043f\u0435\u0446\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430",
+                "id": "4504338361750308",
+                "name": "\u041b\u0438\u043f\u0435\u0446\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430",
+                "search_attributes": {
+                    "handling_type": 3
+                },
+                "type": "street"
+            },
+            {
+                "color": "#E15D29",
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u041b\u0438\u0445\u043e\u0431\u043e\u0440\u044b",
+                "id": "70030076541332283",
+                "name": "\u041b\u0438\u0445\u043e\u0431\u043e\u0440\u044b",
+                "route_type": "mcd",
+                "search_attributes": {
+                    "handling_type": 0
+                },
+                "subtype": "railway",
+                "type": "station"
+            },
+            {
+                "address_name": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041b\u0438\u0445\u0430\u0447\u0451\u0432\u0430, 15",
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041b\u0438\u0445\u0430\u0447\u0451\u0432\u0430, 15",
+                "id": "70030076158762135",
+                "name": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041b\u0438\u0445\u0430\u0447\u0451\u0432\u0430, 15",
+                "purpose_name": "\u041c\u043d\u043e\u0433\u043e\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+                "search_attributes": {
+                    "handling_type": 0
+                },
+                "type": "building"
+            },
+            {
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u041b\u0438\u0445\u043e\u0431\u043e\u0440\u0441\u043a\u0430\u044f \u043d\u0430\u0431\u0435\u0440\u0435\u0436\u043d\u0430\u044f",
+                "id": "4504338361746864",
+                "name": "\u041b\u0438\u0445\u043e\u0431\u043e\u0440\u0441\u043a\u0430\u044f \u043d\u0430\u0431\u0435\u0440\u0435\u0436\u043d\u0430\u044f",
+                "search_attributes": {
+                    "handling_type": 3
+                },
+                "type": "street"
+            },
+            {
+                "full_name": "\u041c\u043e\u0441\u043a\u0432\u0430, \u0443\u043b\u0438\u0446\u0430 \u041b\u0438\u043e\u0437\u043d\u043e\u0432\u043e\u0439",
+                "id": "70030076924017325",
+                "name": "\u0443\u043b\u0438\u0446\u0430 \u041b\u0438\u043e\u0437\u043d\u043e\u0432\u043e\u0439",
+                "search_attributes": {
+                    "handling_type": 3
+                },
+                "type": "street"
+            },
+            {
+                "address_name": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0435 \u0448\u043e\u0441\u0441\u0435, \u0432\u043b5",
+                "building_name": "\u041b\u0418\u0413\u0410, \u0442\u043e\u0440\u0433\u043e\u0432\u044b\u0439 \u0446\u0435\u043d\u0442\u0440",
+                "full_name": "\u0425\u0438\u043c\u043a\u0438, \u041b\u0418\u0413\u0410, \u0442\u043e\u0440\u0433\u043e\u0432\u044b\u0439 \u0446\u0435\u043d\u0442\u0440",
+                "id": "4504127908394551",
+                "name": "\u041b\u0438\u0433\u0430, \u0442\u043e\u0440\u0433\u043e\u0432\u044b\u0439 \u0446\u0435\u043d\u0442\u0440",
+                "purpose_name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043e-\u0440\u0430\u0437\u0432\u043b\u0435\u043a\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+                "search_attributes": {
+                    "handling_type": 0
+                },
+                "type": "branch"
+            }
+        ],
+        "total": 10
+    }
+}
