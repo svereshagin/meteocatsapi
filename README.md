@@ -84,26 +84,14 @@ docker-compose build
 docker-compose up
 ```
 
-4. после поднятия сервера перейдите на соответсвующий адрес
-
-## Поднятие frontend контейнера 
-перейдите по пути 
-```bash
-cd frontend/forecastapi
-```
-выполните в терминале следующие команды
-```bash
-docker build -t webapp .
-docker run -it -p 8080:80 --rm --name webapp
-```
-если всё прошло успешно вы сможете увидеть запущенное приложение по адресу http://localhost:8080/
-
-
 ## После запуска:
 Backend: http://0.0.0.0:8123/
+Frontend: http://localhost:8080/ 
 Документация FastAPI: http://0.0.0.0:8123/docs
 Прогноз погоды: http://0.0.0.0:8123/weather/{city}
 
 ## Тестирование
 Рекомендую протестировать API через встроенную документацию OpenAPI по адресу:
 http://0.0.0.0:8123/docs
+![img.png](docimgs/img.png)
+![img_1.png](docimgs/img_1.png)
